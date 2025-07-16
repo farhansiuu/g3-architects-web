@@ -133,14 +133,53 @@ main section{
 .sponsor-img img{
     filter: grayscale(100%);
 }
+#sec-ti{
+    border-left: 5px solid #FF900E;
+    padding: 20px;
+}
+.enjoy-card{
+     padding: 30px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+#badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.enjoy-card .enjoy-text{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+   
+}
+.enjoy{
+    gap: 140px;
+}
+.enjoy-img{
+    width: 100%;
+}
 @media screen and (max-width:576px) {
-    .navbar, .nav-links,.team {
+    .navbar, .nav-links,.team,.enjoy {
         flex-direction: column;
     }
     .team-img, .content-2, .sponsor-img{
         grid-template-columns: repeat(1, 1fr);
         
     }
+    #badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
      .content-2{
         justify-items: center;
      }
@@ -153,12 +192,16 @@ main section{
     }
 }
    @media screen and (min-width:576px) and (max-width:992px) {
-    .team{
+    .team, .enjoy{
         flex-direction: column;
     }
     .sponsor-img{
         grid-template-columns: repeat(3,1fr);
         gap: 50px;
         justify-items: center;
+    }
+     #badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
    }
